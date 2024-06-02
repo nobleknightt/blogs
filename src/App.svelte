@@ -167,23 +167,21 @@
 </script>
 
 <main
-  class="w-screen h-screen p-4 pb-1 flex flex-col items-center gap-8 {theme.backgroundColor} {theme.textColor}"
+  class="w-screen h-screen p-4 flex flex-col items-center gap-8 {theme.backgroundColor} {theme.textColor} overflow-x-hidden"
 >
-  <div class="flex gap-4 justify-between w-full">
-    <h1 class="flex-1 text-6xl font-bold w-full text-center">Blogs</h1>
+  <div class="w-full flex gap-4 justify-between ">
+    <h1 class="w-full flex-1 text-6xl font-bold text-center">Blogs</h1>
     <button
       class="cursor-pointer {theme.backgroundColor_Card} w-24 font-semibold py-1 m-auto rounded-md"
       on:click={changeTheme}>{theme.name}</button
     >
   </div>
-  <ul class="w-full grid grid-cols-[repeat(auto-fill,minmax(16rem,1fr))] gap-4">
+  <ul class="w-full grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4">
     {#each blogs as blog}
       <li
-        class="w-full p-2 flex flex-col gap-2 {theme.backgroundColor_Card} rounded-lg"
+        class="p-2 flex flex-col gap-2 {theme.backgroundColor_Card} rounded-lg"
       >
-        <div>
-          <a href={blog.url} class="text-2xl font-medium">{blog.name}</a>
-        </div>
+        <a href={blog.url} class="text-2xl font-medium flex-1">{blog.name}</a>
         <ul class="flex flex-wrap gap-2">
           {#each blog.tags as tag}
             <span class="{theme.backgroundColor_Tag} rounded-md px-2"
