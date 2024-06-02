@@ -158,11 +158,14 @@
     },
   ];
 
-  let themeIndex = 0;
+  let themeIndex = parseInt(localStorage.getItem("BLOGS_THEME_INDEX")) || Math.floor(Math.random() * themes.length);
+  localStorage.setItem("BLOGS_THEME_INDEX", themeIndex.toString());
+
   $: theme = themes[themeIndex];
 
   function changeTheme() {
     themeIndex = (themeIndex + 1) % themes.length;
+    localStorage.setItem("BLOGS_THEME_INDEX", themeIndex.toString());
   }
 </script>
 
@@ -181,7 +184,7 @@
       <li
         class="p-2 flex flex-col gap-2 {theme.backgroundColor_Card} rounded-lg"
       >
-        <a href={blog.url} class="text-2xl font-medium flex-1">{blog.name}</a>
+        <a href={blog.url} class="text-2xl font-medium flex-1" target="_blank">{blog.name}</a>
         <ul class="flex flex-wrap gap-2">
           {#each blog.tags as tag}
             <span class="{theme.backgroundColor_Tag} rounded-md px-2"

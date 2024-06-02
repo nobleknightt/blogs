@@ -43,5 +43,10 @@
         "name": "Shawn Wang's Blog",
         "url": "https://www.swyx.io/",
         "tags": ["Software Engineering", "Career"]
+    },
+    {
+        "name": "Phil Eaton's Blog",
+        "url": "https://eatonphil.com/",
+        "tags": ["Software Development"]
     }
 ]
