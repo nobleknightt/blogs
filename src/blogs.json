@@ -48,5 +48,10 @@
         "name": "Phil Eaton's Blog",
         "url": "https://eatonphil.com/",
         "tags": ["Software Development"]
+    },
+    {
+        "name": "Mux's Blog",
+        "url": "https://www.mux.com/blog",
+        "tags": ["Web Development"]
     }
 ]
