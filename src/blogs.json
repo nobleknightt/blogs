@@ -47,11 +47,16 @@
     {
         "name": "Phil Eaton's Blog",
         "url": "https://eatonphil.com/",
-        "tags": ["Software Development"]
+        "tags": ["Software Development", "Computer Science"]
     },
     {
-        "name": "Mux's Blog",
+        "name": "Mux.com's Blog",
         "url": "https://www.mux.com/blog",
+        "tags": ["Web Development"]
+    },
+    {
+        "name": "Tania's Blog",
+        "url": "https://www.taniarascia.com/",
         "tags": ["Web Development"]
     }
 ]
