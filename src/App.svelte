@@ -26,7 +26,10 @@
   class="w-screen h-screen p-4 flex flex-col items-center gap-8 {theme.backgroundColor} {theme.textColor} overflow-x-hidden"
 >
   <div class="w-full flex gap-4 justify-between">
-    <h1 class="w-full flex-1 text-6xl font-bold text-center">Blogs</h1>
+    <div class="w-full flex-1 text-center">
+      <h1 class="text-6xl font-bold">Blogs</h1>
+      <p class="font-medium">Some of the best blogs from all over the web</p>
+    </div>
     <button
       class="cursor-pointer {theme.backgroundColor_Card} w-28 font-semibold py-1 m-auto rounded-md flex items-center justify-center pl-2"
       on:click={changeTheme}
