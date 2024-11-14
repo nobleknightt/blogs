@@ -1,6 +1,7 @@
 <div align="center">
   <a href="https://nobleknightt.github.io/blogs/">nobleknightt.github.io/blogs</a>
 </div>
+<br/>
 
 ![blogs](./blogs.png)
 
